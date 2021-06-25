@@ -10,3 +10,8 @@ import threading
 import queue
 import io
 
+class PaletteApp:
+    def __init__(self, master):
+        self.master = master
+        self.master.title("Palette Extractor")
+
