@@ -15,3 +15,10 @@ class PaletteApp:
         self.master = master
         self.master.title("Palette Extractor")
 
+        self.canvas = tk.Canvas(self.master, width=800, height=800, relief="raised")
+        self.canvas.pack()
+
+        # Chargez l'image d'arrière-plan
+        self.background_image = Image.open("dd.png") # Remplacez "your_background_image.png" par le nom de votre fichier image
+        self.update_canvas_size()  # Ajoutez cette ligne pour initialiser l'image d'arrière-plan
+
