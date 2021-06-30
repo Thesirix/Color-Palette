@@ -22,3 +22,10 @@ class PaletteApp:
         self.background_image = Image.open("dd.png") # Remplacez "your_background_image.png" par le nom de votre fichier image
         self.update_canvas_size()  # Ajoutez cette ligne pour initialiser l'image d'arrière-plan
 
+        self.save_button = tk.Button(self.master, text="Enregistrer la palette", command=self.save_palette, state="disabled")
+        self.save_button.pack()
+
+        self.master.bind("<Configure>", self.update_canvas_size)
+        self.canvas.drop_target_register('DND_Files')
+        self.canvas.dnd_bind('<<Drop>>', self.drop)
+
