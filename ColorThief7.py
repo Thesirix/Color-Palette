@@ -29,3 +29,9 @@ class PaletteApp:
         self.canvas.drop_target_register('DND_Files')
         self.canvas.dnd_bind('<<Drop>>', self.drop)
 
+    def drop(self, event):
+        if event.data:
+            self.filepath = event.widget.tk.splitlist(event.data)[0]
+            self.process_thread = threading.Thread(target=self.process_image, args=(self.filepath,))
+            self.process_thread.start()
+
