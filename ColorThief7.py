@@ -35,3 +35,10 @@ class PaletteApp:
             self.process_thread = threading.Thread(target=self.process_image, args=(self.filepath,))
             self.process_thread.start()
 
+    def process_image(self, filepath):
+        self.image = Image.open(filepath)
+
+        # Redimensionnement de l'image
+        max_size = (1920, 1080)
+        self.image.thumbnail(max_size)
+
