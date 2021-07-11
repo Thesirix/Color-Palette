@@ -42,3 +42,10 @@ class PaletteApp:
         max_size = (1920, 1080)
         self.image.thumbnail(max_size)
 
+        # Utilisation d'un fichier temporaire pour éviter d'écrire sur le disque
+        with io.BytesIO() as temp_file:
+            self.image.save(temp_file, format="PNG")
+            temp_file.seek(0)
+            color_thief = ColorThief(temp_file)
+            self.palette = color_thief.get_palette(color_count=8, quality=10)
+
