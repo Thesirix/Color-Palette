@@ -49,3 +49,10 @@ class PaletteApp:
             color_thief = ColorThief(temp_file)
             self.palette = color_thief.get_palette(color_count=8, quality=10)
 
+        self.create_result_image()
+        self.update_canvas_size()
+
+    def create_result_image(self):
+        palette_height = int(self.image.width / 5)
+        palette_height = min(palette_height, self.image.height // 3)
+
