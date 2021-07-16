@@ -56,3 +56,9 @@ class PaletteApp:
         palette_height = int(self.image.width / 5)
         palette_height = min(palette_height, self.image.height // 3)
 
+        self.result_image = Image.new("RGB", (self.image.width, self.image.height + palette_height), color=(255, 255, 255))
+        self.result_image.paste(self.image, (0, 0))
+
+        draw = ImageDraw.Draw(self.result_image)
+        num_colors = len(self.palette)
+
