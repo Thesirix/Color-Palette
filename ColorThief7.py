@@ -69,3 +69,10 @@ class PaletteApp:
         # Arrondir les coins des rectangles
         corner_radius = max(1, int(self.image.width * 0.01))
 
+        # Calculer l'espace entre les tuiles et les bordures gauche et droite
+        space_between_tiles = border_thickness * 2
+        total_space = space_between_tiles * (num_colors + 1)
+        remaining_space = self.result_image.width - total_space
+        rect_width = remaining_space // num_colors
+        rect_height = palette_height - border_thickness * 2
+
