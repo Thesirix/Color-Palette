@@ -62,3 +62,10 @@ class PaletteApp:
         draw = ImageDraw.Draw(self.result_image)
         num_colors = len(self.palette)
 
+        # Épaisseur de la bordure autour des tuiles
+        border_thickness = max(1, int(self.image.width * 0.005))
+        border_color = (255, 255, 255)  # Couleur de la bordure (blanc)
+
+        # Arrondir les coins des rectangles
+        corner_radius = max(1, int(self.image.width * 0.01))
+
