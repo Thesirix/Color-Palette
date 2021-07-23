@@ -76,3 +76,8 @@ class PaletteApp:
         rect_width = remaining_space // num_colors
         rect_height = palette_height - border_thickness * 2
 
+        # Calculer les bordures gauche et droite pour centrer les tuiles
+        left_right_border = space_between_tiles
+
+        for i, color in enumerate(self.palette):
+            x0 = left_right_border + i * (rect_width + space_between_tiles)
