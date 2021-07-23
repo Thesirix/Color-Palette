@@ -81,3 +81,10 @@ class PaletteApp:
 
         for i, color in enumerate(self.palette):
             x0 = left_right_border + i * (rect_width + space_between_tiles)
+            y0 = self.image.height + border_thickness
+            x1 = x0 + rect_width
+            y1 = y0 + rect_height
+
+            # Dessiner le rectangle avec la couleur de la bordure
+            draw.rounded_rectangle([x0, y0, x1, y1], radius=corner_radius, fill=border_color)
+
