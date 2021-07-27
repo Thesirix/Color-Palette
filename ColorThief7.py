@@ -88,3 +88,8 @@ class PaletteApp:
             # Dessiner le rectangle avec la couleur de la bordure
             draw.rounded_rectangle([x0, y0, x1, y1], radius=corner_radius, fill=border_color)
 
+            # Dessiner le rectangle avec la couleur de la palette à l'intérieur de la bordure
+            draw.rounded_rectangle([x0 + border_thickness, y0 + border_thickness, x1 - border_thickness, y1 - border_thickness], radius=corner_radius - 2, fill=color)
+
+    def update_canvas_size(self, event=None):
+
