@@ -93,3 +93,10 @@ class PaletteApp:
 
     def update_canvas_size(self, event=None):
 
+        
+        canvas_width = self.canvas.winfo_width()
+        canvas_height = self.canvas.winfo_height()
+        bg_image = self.background_image.resize((canvas_width, canvas_height), Image.LANCZOS)
+        self.tk_bg_image = ImageTk.PhotoImage(bg_image)
+        self.canvas.create_image(0, 0, image=self.tk_bg_image, anchor="nw")
+
