@@ -105,3 +105,10 @@ class PaletteApp:
             self.display_image = self.result_image.copy()
             self.display_image.thumbnail((canvas_width, canvas_height))
 
+            self.tk_image = ImageTk.PhotoImage(self.display_image)
+            image_width, image_height = self.display_image.size
+            x = (canvas_width - image_width) // 2
+            y = (canvas_height - image_height) // 2
+            self.canvas.create_image(x, y, image=self.tk_image, anchor="nw")
+            self.save_button.config(state="normal")
+
