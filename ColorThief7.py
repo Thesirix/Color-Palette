@@ -100,3 +100,8 @@ class PaletteApp:
         self.tk_bg_image = ImageTk.PhotoImage(bg_image)
         self.canvas.create_image(0, 0, image=self.tk_bg_image, anchor="nw")
 
+        if hasattr(self, "result_image"):
+
+            self.display_image = self.result_image.copy()
+            self.display_image.thumbnail((canvas_width, canvas_height))
+
