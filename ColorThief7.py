@@ -119,3 +119,7 @@ class PaletteApp:
                 self.result_image.save(file, "JPEG", quality=95)  # La qualité peut être ajustée entre 1 et 95, 95 étant la meilleure qualité.
                 file.close()
 
+if __name__ == "__main__":
+    root = TkinterDnD.Tk()
+    app = PaletteApp(root)
+    root.mainloop()
