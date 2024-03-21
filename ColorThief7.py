@@ -112,3 +112,10 @@ class PaletteApp:
             self.canvas.create_image(x, y, image=self.tk_image, anchor="nw")
             self.save_button.config(state="normal")
 
+    def save_palette(self):
+        if hasattr(self, "result_image"):
+            file = filedialog.asksaveasfile(mode="wb", defaultextension=".jpg", filetypes=[("JPEG Files", "*.jpg"), ("All Files", "*.*")])
+            if file:
+                self.result_image.save(file, "JPEG", quality=95)  # La qualité peut être ajustée entre 1 et 95, 95 étant la meilleure qualité.
+                file.close()
+
