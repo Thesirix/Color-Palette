@@ -21,7 +21,7 @@ To use Color Palette, follow these simple steps:
 
 2. **Launching the Application:** Run the `main.py` file to start the application. You can do this by using the following command in the terminal:
 
-python ColorThief7.py
+`python ColorThief7.py`
 
 3. **Image Drag and Drop:** Drag and drop any image of any format into the application interface to start the color palette extraction process.
 
