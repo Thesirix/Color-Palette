@@ -1,39 +1,34 @@
 # Color-Palette
 
-Bienvenue dans Color Palette, une application Python avec une interface graphique permettant d'extraire une palette de couleurs à partir de n'importe quelle image, et de créer une nouvelle image avec cette palette.
+Welcome to Color Palette, a Python application with a graphical interface allowing to extract a color palette from any image, and to create a new image with this palette.
 
 ![Color Palette](dd.png)
 
-## Fonctionnalités
+## Features
 
-- **Drag and Drop d'Images :** Vous pouvez facilement importer n'importe quelle image en la faisant glisser et en la déposant dans l'interface de l'application.
-  
-- **Extraction de la Palette de Couleurs :** Une fois l'image importée, l'application extrait automatiquement une palette de couleurs à partir de cette image, en analysant les pixels et en déterminant les couleurs dominantes.
+- **Image Drag and Drop:** You can easily import any image by dragging and dropping it into the application interface.
+- **Color Palette Extraction:** Once the image is imported, the application automatically extracts a color palette from this image, by analyzing the pixels and determining the dominant colors.
 
-- **Création d'une Nouvelle Image :** Vous pouvez ensuite utiliser la palette de couleurs extraite pour créer une nouvelle image, en appliquant ces couleurs à une tuile d'image. Cela peut être utile dans des domaines comme le cinéma ou la photographie pour obtenir le "look" d'une image.
+- **Creation of a New Image:** You can then use the extracted color palette to create a new image, by applying these colors to an image tile. This can be useful in fields like cinema or photography to get the "look" of an image.
 
-- **Enregistrement de l'Image Créée :** Une fois la nouvelle image générée, vous avez la possibilité de l'enregistrer sur votre système pour une utilisation ultérieure.
+- **Saving the Created Image:** Once the new image is generated, you have the option to save it to your system for later use.
 
 ## Instructions
 
-Pour utiliser Color Palette, suivez ces étapes simples :
+To use Color Palette, follow these simple steps:
 
-1. **Installation des Prérequis :** Assurez-vous d'avoir Python installé sur votre système. Vous pouvez installer les dépendances nécessaires en exécutant la commande suivante :
+1. **Prerequisites Installation:** Make sure you have Python installed on your system. You can install the necessary dependencies by running the following command:
 
-
-2. **Lancement de l'Application :** Exécutez le fichier `main.py` pour démarrer l'application. Vous pouvez le faire en utilisant la commande suivante dans le terminal :
+2. **Launching the Application:** Run the `main.py` file to start the application. You can do this by using the following command in the terminal:
 
 python ColorThief7.py
 
+3. **Image Drag and Drop:** Drag and drop any image of any format into the application interface to start the color palette extraction process.
 
-3. **Drag and Drop de l'Image :** Faites glisser et déposez n'importe quelle image de n'importe quel format dans l'interface de l'application pour commencer le processus d'extraction de la palette de couleurs.
+4. **Color Palette Visualization:** Once the image is imported, you will see the extracted color palette displayed in the application interface.
 
-4. **Visualisation de la Palette de Couleurs :** Une fois l'image importée, vous verrez la palette de couleurs extraite affichée dans l'interface de l'application.
+5. **Creation and Saving of the New Image:** Use the extracted colors to create a new image, then save it to your system for later use.
 
-5. **Création et Enregistrement de la Nouvelle Image :** Utilisez les couleurs extraites pour créer une nouvelle image, puis enregistrez-la sur votre système pour une utilisation ultérieure.
-
-
-
-Profitez de Color Palette pour créer des palettes de couleurs uniques à partir de vos images préférées ! Si vous avez des suggestions d'amélioration ou des rapports de bug, n'hésitez pas à les signaler. Merci de votre soutien et de votre intérêt pour cette application.
+Enjoy Color Palette to create unique color palettes from your favorite images! If you have suggestions for improvement or bug reports, do not hesitate to report them. Thank you for your support and your interest in this application.
 
 ![pal](palette.png)
